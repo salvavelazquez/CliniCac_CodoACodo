@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>Inicia sesión</title>
+</head>
+<body>
+    <header>
+        <div id="login-header">
+            <a href="./index.html">
+                <img src="./img/logo1.png" alt="Header">
+            </a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Inicia sesión</h2>
+            <form action="./index.html">
+                <div class="input-group">
+                    <label for="nombre">Correo electrónico</label>
+                    <input type="text" name="nombre" id="nombre" size="30" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="contrasena">Contraseña</label>
+                    <div class="password-input">
+                        <input type="password" name="contrasena" id="contrasena" size="30" required>
+                        <span class="password-toggle" onclick="togglePassword()"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                    
+                <div>
+                    <input type="submit" value="Iniciar sesión" class="submit-button">
+                </div>
+                
+            </form>
+            <p class="login-options">¿No se ha dado de alta? <a href="./register.html">Regístrese</a></p>
+            <p class="login-options">¿Ha olvidado su contraseña? <a href="./forgot_password.html">Recuperar contraseña</a></p>
+        </section>
+    </main>
+    <footer>
+        <span class="footer-text">ASOCIACIÓN MUTUAL CLINICA CAC inscripta en el Registro Nacional de Entidades de
+            Medicina Prepaga (R.N.E.M.P.) bajo el número 1137. Superintendencia de Servicios de Salud - Órgano de
+            Control de Obras Sociales y Entidades de Medicina Prepaga - 0800-222-SALUD (72583) -
+            www.sssalud.gob.ar</span>
+            <ul class="footer-social-media-list">
+                <li><a href="https://www.youtube.com" target="_blank" class="social-media-icon">
+                    <i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                </li>
+                
+                <li><a href="https://www.linkedin.com" target="_blank" class="social-media-icon">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                
+                <li><a href="https://twitter.com/" target="_blank" class="social-media-icon">
+                    <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                
+                <li><a href="https://www.instagram.com" target="_blank" class="social-media-icon">
+                    <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                
+            </ul>
+        </footer>
+    <script>
+        function togglePassword() {
+            var passwordInput = document.querySelector('input[name="contrasena"]');
+            var passwordToggle = document.querySelector('.password-toggle');
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                passwordToggle.innerHTML = '<i class="fa fa-eye-slash" aria-hidden="true"></i>';
+            } else {
+                passwordInput.type = "password";
+                passwordToggle.innerHTML = '<i class="fa fa-eye" aria-hidden="true"></i>';
+            }
+        }
+    </script>
+</body>
+</html>
