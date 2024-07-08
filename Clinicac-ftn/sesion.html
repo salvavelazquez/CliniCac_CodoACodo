@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>Clinica - Inicio de sesión -</title>
+</head>
+
+<body>
+    <header>
+        <nav style="background-color: rgb(192, 243, 219);">
+            <div id="logo">
+                <a href="./index.html">
+                    <img class="logo" src="./img/logo1.png" alt="logo">
+                </a>
+            </div>
+            <ul id="nav-links">
+                <!-- <li><a href="./profile.html" class="contact-link">Admin</a></li> -->
+                <li><a href="#" class="login">Turnos</a></li>
+                <li><a href="#" class="login">Pietro|Perfil </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section1">
+            <div>
+                <h1>Clinica CaC</h1>
+                <p>La plataforma digital para los pacientes del Hospital CaC. <br>
+                    ‘Clinica CaC’ es un espacio privado pensado para los pacientes del Hospital CaC de Argentina.
+                    Aquí encontrarás toda la información asistencial que necesitas saber en tu día a día.</p>
+            </div>
+            <img src="./img/interfaz2.PNG" alt="Ejemplo Interfaz de usuario">
+        </section>
+        <section class="user-actions">
+            <button onclick="location.href='./users.html'" class="create" >Ver Usuarios</button>
+        </section>
+        <section id="list" class="container">
+            <h3 class="subtitle">Listado de Usuarios</h3>
+            <table id="list-table-movies" class="table">
+                <thead>
+                    <tr>
+                        <th>ID-User</th>
+                        <th>Nombre y Apellido</th>
+                        <th>Correo</th>
+                        <th>Contraseña</th>                        
+                        <th>Fecha de Nacimiento</th>
+                        <th>País</th>
+                        <th>Admin</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-table-movies">
+                    <tr>
+                        <td>1</td>
+                        <td>Juan Pérez</td>
+                        <td>juan.perez@example.com</td>
+                        <td>********</td>
+                        <td>1990-01-01</td>
+                        <td>Argentina</td>
+                        <td>0</td>
+                        <td>
+                            <button class="button-update">Update</button>
+                            <button class="button-delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Ana García</td>
+                        <td>ana.garcia@example.com</td>
+                        <td>********</td>
+                        <td>1985-05-15</td>
+                        <td>Brasil</td>
+                        <td>0</td>
+                        <td>
+                            <button class="button-update">Update</button>
+                            <button class="button-delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pietro López</td>
+                        <td>pietro.lopez@example.com</td>
+                        <td>********</td>
+                        <td>1978-11-30</td>
+                        <td>Argentina</td>
+                        <td>1</td>
+                        <td>
+                            <button class="button-update">Update</button>
+                            <button class="button-delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>María Fernández</td>
+                        <td>maria.fernandez@example.com</td>
+                        <td>********</td>
+                        <td>1995-07-22</td>
+                        <td>Argentina</td>
+                        <td>0</td>
+                        <td>
+                            <button class="button-update">Update</button>
+                            <button class="button-delete">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>  
+    </main>
+    <footer>
+        <span class="footer-text">ASOCIACIÓN MUTUAL CLINICA CAC inscripta en el Registro Nacional de Entidades de
+            Medicina Prepaga (R.N.E.M.P.) bajo el número 1137. Superintendencia de Servicios de Salud - Órgano de
+            Control de Obras Sociales y Entidades de Medicina Prepaga - 0800-222-SALUD (72583) -
+            www.sssalud.gob.ar</span>
+        <ul class="footer-social-media-list">
+            <li><a href="https://www.youtube.com" target="_blank" class="social-media-icon">
+                    <i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+            </li>
+
+            <li><a href="https://www.linkedin.com" target="_blank" class="social-media-icon">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+
+            <li><a href="https://twitter.com/" target="_blank" class="social-media-icon">
+                    <i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+
+            <li><a href="https://www.instagram.com" target="_blank" class="social-media-icon">
+                    <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+
+        </ul>
+    </footer>
+</body>
+
+</html>

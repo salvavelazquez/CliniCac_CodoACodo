@@ -909,6 +909,51 @@ section form input[type="password"] {
     background-color: #1e3a5e; 
   }  
 
+  /* SESION */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+.button-update, .button-delete {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.button-update {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-right: 5px;
+}
+
+.button-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
 /*-------------------*/
 /*---MEDIA QUERIES register & login---*/
 /*-------------------*/
